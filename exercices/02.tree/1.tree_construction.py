@@ -2,6 +2,7 @@
 
 from treelib import Tree
 
+
 def create_tree_from_dict(tree, parent_node_id, parent_dict):
     for key, value in parent_dict.items():
         if isinstance(value, dict):
