@@ -7,6 +7,9 @@ import re
 import os
 # Get the directory path of the current Python file
 local_path = os.path.dirname(os.path.abspath(__file__))
+
+print("Chemin :",local_path)
+
 # Chargement des données JSON à partir du fichier dans un dictionnaire python
 json_data = json.load(open(os.path.join(local_path, 'json_data.json'), "rb"))
 
