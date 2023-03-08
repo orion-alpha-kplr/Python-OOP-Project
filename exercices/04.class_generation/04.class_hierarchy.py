@@ -5,7 +5,6 @@ from unidecode import unidecode
 import re
 import exo02class_generation
 
-
 def trimspaces(data):
     # Define a regular expression pattern to match quoted substrings
     pattern = r'"[^"]*"'
@@ -18,11 +17,8 @@ def trimspaces(data):
 # Charger des données JSON à partir du fichier dans un dictionnaire python
 local_path = os.path.dirname(os.path.abspath(__file__))
 json_data = json.load(open(os.path.join(local_path, 'json_data.json'), "rb"))
-
 json_str = trimspaces(json_data)
-
 #json_str = json.dumps(json_data)
-
 json_data = (unidecode(json_str))
 json_dict = json.loads(json_data)
 
@@ -56,7 +52,7 @@ def write_content(content, filename):
            f.write(content)
 
 contenu = generate_class_hierarchy(json_dict)
-write_content(contenu, "product_classes.py")
+write_content(contenu, "exercices/04.class_generation/product_classes.py")
 
 
 """ Itération sur les éléments du dictionnaire

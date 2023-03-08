@@ -1,5 +1,8 @@
-# Vous allez créer une classe InventoryProductEntry qui a pour role 
-# de représenter une entrée d'inventaire pour un produit spécifique.
+'''- Nous allons a présent créer une classe InventoryProductEntry qui a pour role de représenter une entrée d'inventaire pour un produit spécifique.
+- Après avoir créer les différentes classes qui modélisent les produits de notre magasin, nous devons créer du code qui permet de gérer nos produits et leur inventaire.
+- Cette classe nous permettra de stocker des informations telles que la quantité en stock, les revenues et les dépenses liées à ce produit.
+- Donc, elle permet de gérer le stock lié à un seul produit.'''
+# Vous allez créer une classe InventoryProductEntry qui a pour role de représenter une entrée d'inventaire pour un produit spécifique.
 
 class InventoryProductEntry:
     # Initialisation de la classe, en prenant en argument un objet Product et une quantité initiale
