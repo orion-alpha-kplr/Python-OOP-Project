@@ -7,6 +7,11 @@
 class InventoryProductEntry:
     # Initialisation de la classe, en prenant en argument un objet Product et une quantité initiale
     def __init__(self, product:Product, quantity):
+        product = ""
+        quantity = int(stock_product)
+        sales = price*(stock - quantity)
+        expenses = int()
+        
         """
         'product' : un objet de type produit qui rassemble les différents attributs et caractéristiques de ce dernier
         'quantity' : un entier qui représente le nombre des pièces du produit en question
