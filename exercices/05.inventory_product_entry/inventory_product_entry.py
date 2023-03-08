@@ -7,11 +7,9 @@
 class InventoryProductEntry:
     # Initialisation de la classe, en prenant en argument un objet Product et une quantité initiale
     def __init__(self, product:Product, quantity):
-        product = ""
-        quantity = int(stock_product)
-        sales = price*(stock - quantity)
-        expenses = int()
-        
+		self.product = Product
+        self.quantity = int(quantity)
+
         """
         'product' : un objet de type produit qui rassemble les différents attributs et caractéristiques de ce dernier
         'quantity' : un entier qui représente le nombre des pièces du produit en question
@@ -31,7 +29,13 @@ class InventoryProductEntry:
     
     """
     def sell(self, quantity):
-        #Avant de mettre à jour l'état du stocke du produit, on doit vérifier si on a déjà une quantité suffisante à vendre.
+        #Avant de mettre à jour l'état du stock du produit, on doit vérifier si on a déjà une quantité suffisante à vendre.
+        If quantity < quantity
+            print("Le stock du produit product est insuffisant.")
+            return(False)
+        else
+            
+    
         """
         En utilisant des conditions, vérifier: 
 
