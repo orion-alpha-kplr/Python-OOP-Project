@@ -26,7 +26,7 @@ def create_tree_from_dict(json_dict):
             leaf_node_id = f"{parent_node_id}.{key}"
             tree.create_node(tag=f"{key}: {value}", identifier=leaf_node_id, parent=parent_node_id)
             '''
-    # define the tree
+    # define the tree en tant que variable globale
     global tree 
     tree = Tree()
 
