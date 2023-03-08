@@ -91,7 +91,7 @@ Code de Test / Exemple d'utilisation :
 Ce code génère la définition de la classe Voiture, qui hérite de la classe Vehicule et possède deux attributs, moteur et . 
 Le constructeur de la classe prend en argument moteur, nbportes, marque et modele, ainsi que les arguments de la superclasse Vehicule. 
 La variable code_classe contient le code source généré par la fonction generate_class_def
-"""
+
 def test_fonction():
     
     attributs = {
@@ -104,4 +104,4 @@ def test_fonction():
 
 if __name__ == '__main__':
     # Appeler la fonction principale
-    test_fonction()
+    test_fonction()"""
