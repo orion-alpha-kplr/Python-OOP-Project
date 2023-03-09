@@ -9,7 +9,7 @@ class InventoryProductEntry:
     def __init__(self, product:Product, quantity):
 		self.product = Product
         self.quantity = int(quantity)
-
+Blzlblbdejgr
         """
         'product' : un objet de type produit qui rassemble les différents attributs et caractéristiques de ce dernier
         'quantity' : un entier qui représente le nombre des pièces du produit en question
