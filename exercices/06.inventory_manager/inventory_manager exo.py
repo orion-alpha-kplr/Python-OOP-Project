@@ -50,7 +50,7 @@ class InventoryManager:
     La méthode remove_product est utilisée pour supprimer un produit de l'inventaire.
     Elle prend en argument un nom de produit et supprime l'entrée correspondante dans le dictionnaire 'inventory'.
     """
-    def remove_product(self, product_name):
+    def remove_product(self, product : Product):
         #Utiliser la méthode product_exists pour vérifier si le produit existe dans l'inventaire
         #Si le produit est trouvé, supprimer le de l'inventaire
         #Sinon, afficher un message d'erreur indiquant que le produit n'a pas été trouvé
@@ -61,7 +61,7 @@ class InventoryManager:
     Elle prend en argument le nom du produit et la quantité à vendre.
     """
     
-    def sell_product(self, product_name, quantity):
+    def sell_product(self, product : Product, quantity):
         #Utiliser une boucle pour parcourir les clés du dictionnaire 'inventory'
         #Pour chaque itération, on vérifie si le nom du produit fourni est équal à la clé du dictionnaire.
         #Si le produit est trouvé, appeler la méthode 'sell' de l'objet InventoryProductEntry correspondant avec la quantité à vendre
@@ -72,7 +72,7 @@ class InventoryManager:
     La méthode restock_product est utilisée pour restocker une quantité donnée d'un produit.
     Elle prend en argument le nom du produit et la quantité à restocker.
     """
-    def restock_product(self, product_name, quantity):
+    def restock_product(self, product : Product, quantity):
         #Vérifier si le produit existe déjà dans l'inventaire
         #Si le produit est trouvé, appeler la méthode 'restock' de l'objet InventoryProductEntry correspondant avec la quantité à restocker
         #Si le réapprovisionnement est réussi, afficher un message de confirmation
