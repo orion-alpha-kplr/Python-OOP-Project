@@ -14,4 +14,4 @@ class Meuble(Product):
 
 
 class Product :
-    
+    def 
