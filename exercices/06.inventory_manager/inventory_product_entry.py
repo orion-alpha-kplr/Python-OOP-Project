@@ -46,7 +46,7 @@ class InventoryProductEntry:
         else:
             self.quantity -= quantity
             self.sales += quantity*self.product.price
-            return(True)
+            return (True)
 
     """
         En utilisant des conditions, vérifier: 

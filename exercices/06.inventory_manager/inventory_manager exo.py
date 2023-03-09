@@ -1,3 +1,6 @@
+from inventory_product_entry import InventoryProductEntry
+from product_classes import Product
+from typing import Dict
 #La classe "InventoryManager" est une classe qui permet de gérer un inventaire de produits. 
 
 class InventoryManager:
@@ -13,6 +16,9 @@ class InventoryManager:
     Si c'est le cas, la fonction retourne True, sinon elle retourne False.
     """
     def product_exists(self,product:Product):
+        for inventory_product_entry_key in self.inventory :
+            if inventory_product_entry_key == self.product.name :
+                
         """
         pour chaque 'inventory_product_entry_key' dans self.inventory faire:
             si 'inventory_product_entry_key' est égal à product.name alors:
@@ -26,6 +32,11 @@ class InventoryManager:
     Elle prend en argument un objet Product et une quantité initiale.
     """
     def add_product(self, product:Product, quantity):
+        if self.product_exists(Product):
+            self.inventory[product.name] +=quantity
+        else :
+            self.inventory[product.name] = quantity
+            #self.inventory : Dict.update({product,quantity})
         """
         SI le produit existe déjà dans l'inventaire: 
             afficher un message pour informer l'utilisateur
